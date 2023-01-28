@@ -14,9 +14,12 @@ public class MaxNumber <T extends Comparable>{
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Test max Number using Generics!");
-        MaxNumber<Float> max= new MaxNumber<>();
-        System.out.println("Maximum number: " + max.findMax(5.0f, 3.0f, 1.0f));
-        System.out.println("Maximum number: " + max.findMax(4.0f, 20f, 5.0f));
-        System.out.println("Maximum number: " + max.findMax(6.f, 4.0f, 30.f));
+        String s1 = "Apple";
+        String s2 = "Peach";
+        String s3 = "Banana";
+        MaxNumber<String> max= new MaxNumber<>();
+        System.out.println("Maximum number: " + max.findMax(s1,s2,s3));
+        System.out.println("Maximum number: " + max.findMax(s2,s3,s1));
+        System.out.println("Maximum number: " + max.findMax(s3,s2,s1));
     }
 }
