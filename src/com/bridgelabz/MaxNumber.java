@@ -1,5 +1,5 @@
 package com.bridgelabz;
-public class MaxNumber <T extends Comparable<T>>{
+public class MaxNumber <T extends Comparable>{
     public T findMax(T num1, T num2, T num3) {
         T max = num1;
 
@@ -14,9 +14,9 @@ public class MaxNumber <T extends Comparable<T>>{
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Test max Number using Generics!");
-        MaxNumber max= new MaxNumber<>();
-        System.out.println("Maximum number: " + max.findMax(40, 30, 10));
-        System.out.println("Maximum number: " + max.findMax(40, 20, 50));
-        System.out.println("Maximum number: " + max.findMax(50, 40, 30));
+        MaxNumber<Float> max= new MaxNumber<>();
+        System.out.println("Maximum number: " + max.findMax(5.0f, 3.0f, 1.0f));
+        System.out.println("Maximum number: " + max.findMax(4.0f, 20f, 5.0f));
+        System.out.println("Maximum number: " + max.findMax(6.f, 4.0f, 30.f));
     }
 }
